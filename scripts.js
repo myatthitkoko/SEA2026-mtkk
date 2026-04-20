@@ -225,6 +225,14 @@ function showCards() {
   }
 }
 
+function checkSelection() {
+
+console.log() 
+`${selected.value} is selected.`;
+
+}
+
+
 function showCardsDetails() {
   const cardContainer = document.getElementById("menu-container");
   cardContainer.innerHTML = "";
@@ -274,4 +282,5 @@ function quoteAlert() {
 function removeLastCard() {
   menuItems.pop(); // Remove last item in titles array
   showCards(); // Call showCards again to refresh
+  showCardsDetails();
 }
