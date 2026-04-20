@@ -29,12 +29,15 @@ const CURB_POSTER_URL =
   "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg";
 const EAST_LOS_HIGH_POSTER_URL =
   "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";
+const WANDA_VISION_URL = 
+  "https://lumiere-a.akamaihd.net/v1/images/br_digital_payoff_keyart_v3_lg_44751099.jpeg?region=0%2C0%2C1688%2C2500";
 
 // This is an array of strings (TV show titles)
 let titles = [
   "Fresh Prince of Bel Air",
   "Curb Your Enthusiasm",
   "East Los High",
+  "WandaVision",
 ];
 // Your final submission should have much more data than this, and
 // you should use more than just an array of strings to store it all.
@@ -57,6 +60,8 @@ function showCards() {
       imageURL = CURB_POSTER_URL;
     } else if (i == 2) {
       imageURL = EAST_LOS_HIGH_POSTER_URL;
+    } else if (i == 3) {
+      imageURL = WANDA_VISION_URL;
     }
 
     const nextCard = templateCard.cloneNode(true); // Copy the template card
