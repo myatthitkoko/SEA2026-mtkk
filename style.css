@@ -2,45 +2,87 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: #eef4ed;
+}
+
+.glass {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: 5px;
+  border-radius: 30px;
+  border: white solid 1px;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
 }
 
 .main-header {
-  background-color: rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #0b2545;
   padding-bottom: 10px;
 }
 
 .title {
   text-align: center;
   margin: 0;
-  font-size: 8em;
+  font-size: 5em;
   font-family: "Helvetica";
   font-weight: normal;
-  color: yellow;
+  color: white;
 }
 
 #card-container {
   display: flex;
   justify-content: center;
   margin: 20px;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+#belt {
+  overflow: hidden;
+}
+
+@keyframes scroll {
+  0% {
+    transfrom: translateX(0);
+  }
+  100% {
+    transform: translateX(-60%);
+  }
 }
 
 .card {
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #0b2545;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 5px;
+  border-radius: 100px;
+  background-color: rgba(255,255,255,0.5);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 50px 50px;
 }
 
 .card-content {
   padding: 20px;
   font-family: "Verdana";
-  color: #777;
 }
 
 .card-content h2 {
-  margin-top: 0;
-  font-size: 20px;
+  position: absolute;
+  font-size: 16px;
+  text-align: center;
+  width: 180px;
+  margin-top: -120px;
+  margin-left: -10px;
+  border-radius: 10px;
+  background-color: #8da9c4;
+  height: 50px;
+}
+
+#card-container:hover {
+  animation-play-state: paused;
 }
 
 .card img {
@@ -48,11 +90,18 @@ body {
   height: auto;
 }
 
+.banner {
+  height: 100px;
+  background-color: #8da9c4;
+}
+
 .footer {
+  position: relative;
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.3);
   padding: 10px;
+  height: 500px;
+  overflow: hidden;
 }
 
 button {
@@ -67,4 +116,110 @@ button {
   font-size: 22px;
   cursor: pointer;
   margin: 5px;
+}
+
+.overlay {
+  position: absolute;
+}
+
+.circle {
+  height: 5000px;
+  width: 5000px;
+  border-radius: 3000px;
+  display: flex;
+  justify-content: center;
+  padding-top: 300px;
+  background-color: rgba(141,169,196,0.5);
+}
+
+.banner {
+  height: 100px;
+}
+
+#menu-selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px 100px;
+  font-size: 16pt;
+  color: black;
+  height: 100%;
+}
+
+
+.banner label:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#menu-selection label {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nigiri:checked + label, 
+#rolls:checked + label,
+#sides:checked + label,
+#ramen:checked + label,
+#desserts:checked + label {
+  color: white;
+  background-color: #13315c;
+}
+
+#nigiri, #rolls, #sides, #ramen, #desserts {
+  display: none;
+}
+
+#menu-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 20px;
+}
+
+.menu {
+  width: 250px;
+  height: 300px;
+  margin: 5px;
+  margin: 50px;
+}
+
+.menu-content {
+  padding: 20px;
+  font-family: "Verdana";
+  color: #777;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-content h2 {
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center;
+  height: 70px;
+  align-content: center;
+  margin: 10px;
+}
+
+.menu img {
+  width: 60%;
+  align-self: center;
+  height: auto;
+}
+
+.menu:hover ~ .cover {
+  transform: scale(1, 1);
+}
+
+.cover {
+  height: 100px;
+  width: 100px;
+  transform: scale(1, 0);
+  transform-origin: bottom;
+  transition: transform 0.5s ease-in-out;
+  background-color: black;
 }

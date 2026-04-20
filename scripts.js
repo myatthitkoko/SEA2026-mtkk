@@ -23,22 +23,186 @@
  *
  */
 
-const FRESH_PRINCE_URL =
-  "https://upload.wikimedia.org/wikipedia/en/3/33/Fresh_Prince_S1_DVD.jpg";
-const CURB_POSTER_URL =
-  "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg";
-const EAST_LOS_HIGH_POSTER_URL =
-  "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";
-const WANDA_VISION_URL = 
-  "https://lumiere-a.akamaihd.net/v1/images/br_digital_payoff_keyart_v3_lg_44751099.jpeg?region=0%2C0%2C1688%2C2500";
+const menuItems = [
+  {
+    id: 1,
+    name: "Snow Crab Leg",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-snowcrab.png?raw=true",
+  },
+  {
+    id: 2,
+    name: "Bluefin Chutoro",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-bluefin.png?raw=true",
+  },
+  {
+    id: 3,
+    name: "Seared Bluefin",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-seared-bluefin.png?raw=true",
+  },
+  {
+    id: 4,
+    name: "Tuna",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-tuna.png?raw=true",
+  },
+  {
+    id: 5,
+    name: "Garlic Skipjack Tuna",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-garlic-tuna.png?raw=true",
+  },
+  {
+    id: 6,
+    name: "Yuzu Jalapeno Tuna",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-yuzu-jalapeno-tuna.png?raw=true",
+  },
+  {
+    id: 7,
+    name: "American Wagyu",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-american-wagyu.png?raw=true",
+  },
+  {
+    id: 8,
+    name: "Umami Oil Seared Beef",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-umami-oil-seared-beef.png?raw=true",
+  },
+  {
+    id: 9,
+    name: "Seared Beef with Yakiniku Sauce",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-seared-beef-yakiniku.png?raw=true",
+  },
+  {
+    id: 10,
+    name: "Hokkaido Scallop",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-scallop.png?raw=true",
+  },
+  {
+    id: 11,
+    name: "Seared Scallop Japanese Mayo",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-scallop.png?raw=true",
+  },
+  {
+    id: 12,
+    name: "Salmon",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-salmon.png?raw=true",
+  },
+  {
+    id: 13,
+    name: "Salmon Toro",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-salmon-toro.png?raw=true",
+  },
+  {
+    id: 14,
+    name: "Garlic Ponzu Salmon",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-garlic-ponzu-salmon.png?raw=true",
+  },
+  {
+    id: 15,
+    name: "Umami Oil Salmon",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-umami-oil-salmon.png?raw=true",
+  },
+  {
+    id: 16,
+    name: "Seard Salmon Cream Cheese",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-seared-salmon-miso-cream-cheese.png?raw=true",
+  },
+  {
+    id: 17,
+    name: "Seared Salmon Japanese Mayo",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-seared-salmon-mayo.png?raw=true",
+  },
+  {
+    id: 18,
+    name: "Shrimp",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-shrimp.png?raw=true",
+  },
+  {
+    id: 19,
+    name: "Sweet Shrimp",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-sweet-shrimp.png?raw=true",
+  },
+  {
+    id: 20,
+    name: "Yuzu Jalapeno Sweet Shrimp",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-yuzu-jalapeno-sweet-shrimp.png?raw=true",
+  },
+  {
+    id: 21,
+    name: "Eel",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-eel.png?raw=true",
+  },
+  {
+    id: 22,
+    name: "Seared Eel Cream Cheese",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-seared-eel-miso-cream-cheese.png?raw=true",
+  },
+  {
+    id: 23,
+    name: "Yellowtail",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-yellowtail.png?raw=true",
+  },
+  {
+    id: 24,
+    name: "Squid",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-squid.png?raw=true",
+  },
+  {
+    id: 25,
+    name: "Tamago",
+    type: "nigiri",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-tamago.png?raw=true",
+  },
+
+]
 
 // This is an array of strings (TV show titles)
-let titles = [
-  "Fresh Prince of Bel Air",
-  "Curb Your Enthusiasm",
-  "East Los High",
-  "WandaVision",
-];
 // Your final submission should have much more data than this, and
 // you should use more than just an array of strings to store it all.
 
@@ -48,24 +212,34 @@ function showCards() {
   cardContainer.innerHTML = "";
   const templateCard = document.querySelector(".card");
 
-  for (let i = 0; i < titles.length; i++) {
-    let title = titles[i];
+  for (let i = 0; i < menuItems.length; i++) {
+    const item = menuItems[i];
+   
 
     // This part of the code doesn't scale very well! After you add your
     // own data, you'll need to do something totally different here.
-    let imageURL = "";
-    if (i == 0) {
-      imageURL = FRESH_PRINCE_URL;
-    } else if (i == 1) {
-      imageURL = CURB_POSTER_URL;
-    } else if (i == 2) {
-      imageURL = EAST_LOS_HIGH_POSTER_URL;
-    } else if (i == 3) {
-      imageURL = WANDA_VISION_URL;
-    }
 
     const nextCard = templateCard.cloneNode(true); // Copy the template card
-    editCardContent(nextCard, title, imageURL); // Edit title and image
+    editCardContent(nextCard, item.name, item.imageURL); 
+    cardContainer.appendChild(nextCard); // Add new card to the container
+  }
+}
+
+function showCardsDetails() {
+  const cardContainer = document.getElementById("menu-container");
+  cardContainer.innerHTML = "";
+  const templateCard = document.querySelector("#nigiri-section .menu");
+  console.log("menu container:", cardContainer);
+  console.log("menu template:", templateCard);
+  for (let i = 0; i < menuItems.length; i++) {
+    const item = menuItems[i];
+   
+
+    // This part of the code doesn't scale very well! After you add your
+    // own data, you'll need to do something totally different here.
+
+    const nextCard = templateCard.cloneNode(true); // Copy the template card
+    editCardContent(nextCard, item.name, item.imageURL); 
     cardContainer.appendChild(nextCard); // Add new card to the container
   }
 }
@@ -88,6 +262,7 @@ function editCardContent(card, newTitle, newImageURL) {
 
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards);
+document.addEventListener("DOMContentLoaded", showCardsDetails);
 
 function quoteAlert() {
   console.log("Button Clicked!");
@@ -97,6 +272,6 @@ function quoteAlert() {
 }
 
 function removeLastCard() {
-  titles.pop(); // Remove last item in titles array
+  menuItems.pop(); // Remove last item in titles array
   showCards(); // Call showCards again to refresh
 }

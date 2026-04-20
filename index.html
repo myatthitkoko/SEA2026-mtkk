@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>LA TV Shows | Home</title>
+    <title>Ask A Server</title>
     <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="scripts.js"></script>
@@ -9,23 +9,51 @@
 
   <body>
     <header class="main-header">
-      <h1 class="title">Los Angeles TV Shows</h1>
+      <h1 class="title">Kura Sushi Menu</h1>
     </header>
-    <div id="card-container"></div>
-    <div class="card" style="display: none">
-      <div class="card-content">
-        <h2>TV Show Title</h2>
-        <img src="" alt="TV Show Poster" />
-        <ul>
-          <li>Bullet Point 1</li>
-          <li>Bullet Point 2</li>
-          <li>Bullet Point 3</li>
-        </ul>
+    <section id="belt">
+      <div id="card-container"></div>
+      <div class="card" style="display: none">
+        <div class="card-content">
+          <h2>TV Show Title</h2>
+          <img src="" alt="Menu Poster" />
+        </div>
       </div>
+    </section>
+    <div class="banner">
+      <section id="menu-selection">
+          <input type="radio" id="nigiri" name="menu" value="nigiri" checked>
+          <label for="nigiri" class="nigiri">Nigiri</label>
+          <input type="radio" id="rolls" name="menu" value="rolls">
+          <label for="rolls">Rolls</label>
+          <input type="radio" id="sides" name="menu" value="sides">
+          <label for="sides">Sides</label>
+          <input type="radio" id="ramen" name="menu" value="ramen">
+          <label for="ramen">Ramen</label>
+          <input type="radio" id="desserts" name="menu" value="desserts">
+          <label for="desserts">Desserts</label>
+      </section>
     </div>
+    <section id="nigiri-section">
+      <div id="menu-container"></div>
+      <div class="menu glass" style="display: none">
+        <div class="menu-content">
+          <img src="" alt="">
+          <h2></h2>
+          <ul>
+            <li>Bullet List</li>
+            <li>Bullet List</li>
+            <li>Bullet List</li>
+          </ul>
+          <div class="cover"></div>
+        </div>
+      </div>
+    </section>
     <div class="footer">
-      <button onclick="quoteAlert()">Get A Quote!</button>
-      <button onclick="removeLastCard()">Remove A Card!</button>
+      <div class="overlay circle">
+        <button onclick="quoteAlert()">Get A Quote!</button>
+        <button onclick="removeLastCard()">Remove A Card!</button>
+      </div>
     </div>
   </body>
 </html>
