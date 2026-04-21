@@ -199,6 +199,167 @@ const menuItems = [
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-tamago.png?raw=true",
   },
+  {
+    id: 30,
+    name: "Catepillar Roll",
+    type: "rolls",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-catepillar.png?raw=true",
+  },
+  {
+    id: 31,
+    name: "Golden Crunchy Roll",
+    type: "rolls",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-golden-crunchy.png?raw=true",
+  },
+  {
+    id: 32,
+    name: "Rainbow Roll",
+    type: "rolls",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-rainbow.png?raw=true",
+  },
+  {
+    id: 33,
+    name: "Philadelphia Roll",
+    type: "rolls",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-philadelphia.png?raw=true",
+  },
+  {
+    id: 34,
+    name: "Snow Crab California Roll",
+    type: "rolls",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-snowcrab-california.png?raw=true",
+  },
+  {
+    id: 35,
+    name: "Spicy Tuna Roll",
+    type: "rolls",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-spicy-tuna.png?raw=true",
+  },
+  {
+    id: 60,
+    name: "Chicken Gyoza Dumpling",
+    type: "sides",
+    price: 6.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/sides-chicken-gyoza.png?raw=true",
+  },
+  {
+    id: 61,
+    name: "Garlic Ponzu Sashimi",
+    type: "sides",
+    price: 4.95,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/sides-garlic-ponzu-sashimi.png?raw=true",
+  },
+  {
+    id: 62,
+    name: "Tuna Sashimi",
+    type: "sides",
+    price: 4.95,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/sides-tuna-sashimi.png?raw=true",
+  },
+  {
+    id: 63,
+    name: "Salmon Sashimi",
+    type: "sides",
+    price: 4.95,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/sides-salmon-sashimi.png?raw=true",
+  },
+  {
+    id: 64,
+    name: "Yellow Tail Sashimi",
+    type: "sides",
+    price: 4.95,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/sides-yellowtail-sashimi.png?raw=true",
+  },
+  {
+    id: 65,
+    name: "Shrimp Tempura",
+    type: "sides",
+    price: 4.95,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/sides-shrimp-tempura.png?raw=true",
+  },
+  {
+    id: 90,
+    name: "Tantanmen",
+    type: "ramen",
+    price: 10.95,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-tantanmen.png?raw=true",
+  },
+  {
+    id: 90,
+    name: "Tantanmen",
+    type: "ramen",
+    price: 11.95,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-tantanmen.png?raw=true",
+  },
+  {
+    id: 91,
+    name: "Miso Ramen",
+    type: "ramen",
+    price: 11.95,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-miso-ramen.png?raw=true",
+  },
+  {
+    id: 92,
+    name: "Shoyu Ramen",
+    type: "ramen",
+    price: 11.95,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-shoyu-ramen.png?raw=true",
+  },
+  {
+    id: 93,
+    name: "Tonkotsu Ramen",
+    type: "ramen",
+    price: 11.95,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-tonkotsu-ramen.png?raw=true",
+  },
+  {
+    id: 94,
+    name: "Shrimp Tempura Udon",
+    type: "ramen",
+    price: 10.95,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-shrimp-tempura-udon.png?raw=true",
+  },
+  {
+    id: 95,
+    name: "Beef Udon",
+    type: "ramen",
+    price: 10.95,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-beef-udon.png?raw=true",
+  },
+  {
+    id: 120,
+    name: "Taiyaki Ice Cream",
+    type: "desserts",
+    price: 6.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/desserts-taiyaki-ice-cream.png?raw=true",
+  },
+  {
+    id: 121,
+    name: "Gooey Butter Cake",
+    type: "desserts",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/desserts-butter-cake.png?raw=true",
+  },
+  {
+    id: 122,
+    name: "NY Cheesecake",
+    type: "desserts",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/desserts-ny-cheesecake.png?raw=true",
+  },
+  {
+    id: 123,
+    name: "Warabimochi",
+    type: "desserts",
+    price: 4.05,
+    imageURL: "https://github.com/myatthitkoko/files/blob/main/desserts-warabimochi.png?raw=true",
+  },
 
 ]
 
@@ -220,7 +381,7 @@ function showCards() {
     // own data, you'll need to do something totally different here.
 
     const nextCard = templateCard.cloneNode(true); // Copy the template card
-    editCardContent(nextCard, item.name, item.imageURL); 
+    editCardContent(nextCard, item.name, item.imageURL, item.price); 
     cardContainer.appendChild(nextCard); // Add new card to the container
   }
 }
@@ -241,18 +402,38 @@ function showCardsDetails() {
   console.log("menu template:", templateCard);
   for (let i = 0; i < menuItems.length; i++) {
     const item = menuItems[i];
-   
+    if (document.querySelector('input[name="menu"]:checked').value == "all") {
+      const nextCard = templateCard.cloneNode(true); // Copy the template card
+      editCardContent(nextCard, item.name, item.imageURL, item.price); 
+      cardContainer.appendChild(nextCard); // Add new card to the container
+    } else if (item.type == document.querySelector('input[name="menu"]:checked').value) {
+      const nextCard = templateCard.cloneNode(true); // Copy the template card
+      editCardContent(nextCard, item.name, item.imageURL, item.price); 
+      cardContainer.appendChild(nextCard); // Add new card to the container
+    }
 
     // This part of the code doesn't scale very well! After you add your
     // own data, you'll need to do something totally different here.
-
-    const nextCard = templateCard.cloneNode(true); // Copy the template card
-    editCardContent(nextCard, item.name, item.imageURL); 
-    cardContainer.appendChild(nextCard); // Add new card to the container
   }
 }
 
-function editCardContent(card, newTitle, newImageURL) {
+function sortAlphabetical(order) {
+  if (order == "descend") {
+    menuItems.sort((a, b) => b.name.localeCompare(a.name));
+  } else {
+    menuItems.sort((a, b) => a.name.localeCompare(b.name));
+  }
+}
+
+function sortPrice(order) {
+  if (order == "descend") {
+    menuItems.sort((a, b) => b.price - a.price);
+  } else {
+    menuItems.sort((a, b) => a.price - b.price);
+  }
+}
+
+function editCardContent(card, newTitle, newImageURL, price) {
   card.style.display = "block";
 
   const cardHeader = card.querySelector("h2");
@@ -262,6 +443,11 @@ function editCardContent(card, newTitle, newImageURL) {
   cardImage.src = newImageURL;
   cardImage.alt = newTitle + " Poster";
 
+  if (card.querySelector("p")) {
+    const cardPrice = card.querySelector("p");
+    cardPrice.textContent = "$" + price.toString();
+  }
+
   // You can use console.log to help you debug!
   // View the output by right clicking on your website,
   // select "Inspect", then click on the "Console" tab
@@ -270,7 +456,34 @@ function editCardContent(card, newTitle, newImageURL) {
 
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards);
+
 document.addEventListener("DOMContentLoaded", showCardsDetails);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const radioInput = document.querySelectorAll('input[name="menu"]');
+  radioInput.forEach(radio => {
+    radio.addEventListener('change', showCardsDetails);
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const checkboxInput = document.querySelectorAll('input[name="checkboxSort"]');
+  checkboxInput.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked && checkbox.id == "sortAZ") {
+        sortAlphabetical();
+      } else if (checkbox.checked && checkbox.id == "sortZA") {
+        sortAlphabetical("descend");
+      } else if (checkbox.checked && checkbox.id == "sortHighPrice") {
+        sortPrice("descend");
+      } else if (checkbox.checked && checkbox.id == "sortLowPrice") {
+        sortPrice();
+      }
+      showCards();
+      showCardsDetails();
+    });
+  });
+});
 
 function quoteAlert() {
   console.log("Button Clicked!");

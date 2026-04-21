@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <title>Menu</title>
     <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
@@ -9,46 +9,68 @@
 
   <body>
     <header class="main-header">
+      <input type="checkbox" id="toggle" name="toggle" value="toggle">
+      <label for="toggle">☰</label>
+      <nav>
+        <div class="navibar">
+          <input type="checkbox" id="sortAZ" name="checkboxSort" value="sortAZ">
+          <label for="sortAZ">Sort A - Z</label>
+          <br>
+          <input type="checkbox" id="sortZA" name="checkboxSort" value="sortZA">
+          <label for="sortZA">Sort Z - A</label>
+          <br>
+          <input type="checkbox" id="sortHighPrice" name="checkboxSort" value="sortHighPrice">
+          <label for="sortHighPrice">Sort by Highest Price</label>
+          <br>
+          <input type="checkbox" id="sortLowPrice" name="checkboxSort" value="sortLowPrice">
+          <label for="sortLowPrice">Sort by Lowest Price</label>
+        </div>
+      </nav>
       <h1 class="title">Kura Sushi Menu</h1>
     </header>
-    <section id="belt">
-      <div id="card-container"></div>
-      <div class="card" style="display: none">
-        <div class="card-content">
-          <h2></h2>
-          <img src="" alt="Menu Poster" />
+    <div class="main-content">
+      <section id="belt">
+        <div id="card-container"></div>
+        <div class="card" style="display: none">
+          <div class="card-content">
+            <h2></h2>
+            <img src="" alt="Menu Poster" />
+          </div>
         </div>
+      </section>
+      <div class="banner">
+        <section id="menu-selection">
+            <input type="radio" id="all" name="menu" value="all" checked>
+            <label for="all">All</label>
+            <input type="radio" id="nigiri" name="menu" value="nigiri">
+            <label for="nigiri">Nigiri</label>
+            <input type="radio" id="rolls" name="menu" value="rolls">
+            <label for="rolls">Rolls</label>
+            <input type="radio" id="sides" name="menu" value="sides">
+            <label for="sides">Sides</label>
+            <input type="radio" id="ramen" name="menu" value="ramen">
+            <label for="ramen">Ramen</label>
+            <input type="radio" id="desserts" name="menu" value="desserts">
+            <label for="desserts">Desserts</label>
+        </section>
       </div>
-    </section>
-    <div class="banner">
-      <section id="menu-selection">
-          <input type="radio" id="nigiri" name="menu" value="nigiri" checked>
-          <label for="nigiri" class="nigiri">Nigiri</label>
-          <input type="radio" id="rolls" name="menu" value="rolls">
-          <label for="rolls">Rolls</label>
-          <input type="radio" id="sides" name="menu" value="sides">
-          <label for="sides">Sides</label>
-          <input type="radio" id="ramen" name="menu" value="ramen">
-          <label for="ramen">Ramen</label>
-          <input type="radio" id="desserts" name="menu" value="desserts">
-          <label for="desserts">Desserts</label>
+      <section id="nigiri-section">
+        <div id="menu-container"></div>
+        <div class="menu glass" style="display: none">
+          <div class="menu-content">
+            <img src="" alt="">
+            <h2></h2>
+            <p></p>
+            <ul>
+              <li>Bullet List</li>
+              <li>Bullet List</li>
+              <li>Bullet List</li>
+            </ul>
+            <div class="cover"></div>
+          </div>
+        </div>
       </section>
     </div>
-    <section id="nigiri-section">
-      <div id="menu-container"></div>
-      <div class="menu glass" style="display: none">
-        <div class="menu-content">
-          <img src="" alt="">
-          <h2></h2>
-          <ul>
-            <li>Bullet List</li>
-            <li>Bullet List</li>
-            <li>Bullet List</li>
-          </ul>
-          <div class="cover"></div>
-        </div>
-      </div>
-    </section>
     <div class="footer">
       <div class="overlay circle">
         <button onclick="quoteAlert()">Get A Quote!</button>

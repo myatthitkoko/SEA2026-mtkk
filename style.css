@@ -17,11 +17,71 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
+  height: 100px;
   background-color: #0b2545;
   padding-bottom: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.main-header #toggle {
+  display: none;
+}
+
+
+#toggle + label {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  aspect-ratio: 1 / 1;
+  font-size: 3em;
+  color: white;
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 500px;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 0;
+  display: none;
+  font-size: 16pt;
+}
+
+.main-header #toggle:checked + label {
+  color: red;
+}
+
+.main-header #toggle:checked ~ nav,
+.main-header #toggle:hover ~ nav {
+  display: block;
+}
+
+.navibar {
+  margin-top: 140px;
+  margin-left: 30px;
+  justify-content: center;
+  width: 100%;
+}
+
+.navibar label {
+  z-index: 1;
+  height: 50px;
+  font-size: 24pt;
+  margin-top: 50px;
+  color: white;
 }
 
 .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   margin: 0;
   font-size: 5em;
@@ -35,7 +95,7 @@ body {
   justify-content: center;
   margin: 20px;
   width: max-content;
-  animation: scroll 40s linear infinite;
+  animation: scroll 60s linear infinite;
 }
 
 #belt {
@@ -75,7 +135,7 @@ body {
   font-size: 16px;
   text-align: center;
   width: 180px;
-  margin-top: -120px;
+  margin-top: -80px;
   margin-left: -10px;
   border-radius: 10px;
   background-color: #252422;
@@ -168,12 +228,13 @@ button {
 #rolls:checked + label,
 #sides:checked + label,
 #ramen:checked + label,
-#desserts:checked + label {
+#desserts:checked + label,
+#all:checked + label {
   color: white;
   background-color: #13315c;
 }
 
-#nigiri, #rolls, #sides, #ramen, #desserts {
+#all, #nigiri, #rolls, #sides, #ramen, #desserts {
   display: none;
 }
 
@@ -192,9 +253,20 @@ button {
 
 .menu {
   width: 250px;
-  height: 300px;
+  height: 400px;
   margin: 30px;
   place-self: center;
+  animation: fade 0.5s ease-in-out;
+  transform-origin: left;
+}
+
+@keyframes fade {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .menu-content {
@@ -219,6 +291,11 @@ button {
   width: 60%;
   align-self: center;
   height: auto;
+}
+
+.menu p {
+  width: 100%;
+  text-align: center;
 }
 
 .menu:hover ~ .cover {
