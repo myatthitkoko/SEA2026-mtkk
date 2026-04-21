@@ -13,17 +13,29 @@
       <label for="toggle">☰</label>
       <nav>
         <div class="navibar">
-          <input type="checkbox" id="sortAZ" name="checkboxSort" value="sortAZ">
-          <label for="sortAZ">Sort A - Z</label>
-          <br>
-          <input type="checkbox" id="sortZA" name="checkboxSort" value="sortZA">
-          <label for="sortZA">Sort Z - A</label>
-          <br>
-          <input type="checkbox" id="sortHighPrice" name="checkboxSort" value="sortHighPrice">
-          <label for="sortHighPrice">Sort by Highest Price</label>
-          <br>
-          <input type="checkbox" id="sortLowPrice" name="checkboxSort" value="sortLowPrice">
-          <label for="sortLowPrice">Sort by Lowest Price</label>
+          <div class="search">
+            <h1>Looking for an item?</h1>
+            <input type="text" id="search" name="search" spellcheck="true" placeholder="Search for items here">
+            <button type="submit" onclick="searchCard()">GO</button>
+          </div>
+          <div class="sorting">
+            <span>
+              <input type="checkbox" id="sortAZ" name="checkboxSort" value="sortAZ">
+              <label for="sortAZ">Sort A - Z</label>
+            </span>
+            <span>
+              <input type="checkbox" id="sortZA" name="checkboxSort" value="sortZA">
+              <label for="sortZA">Sort Z - A</label>
+            </span>
+            <span>
+              <input type="checkbox" id="sortHighPrice" name="checkboxSort" value="sortHighPrice">
+              <label for="sortHighPrice">Sort by Highest Price</label>
+            </span>
+            <span>
+              <input type="checkbox" id="sortLowPrice" name="checkboxSort" value="sortLowPrice">
+              <label for="sortLowPrice">Sort by Lowest Price</label>
+            </span>
+          </div>
         </div>
       </nav>
       <h1 class="title">Kura Sushi Menu</h1>
@@ -61,12 +73,12 @@
             <img src="" alt="">
             <h2></h2>
             <p></p>
+            <h4>Main Ingredients</h4>
             <ul>
               <li>Bullet List</li>
               <li>Bullet List</li>
               <li>Bullet List</li>
             </ul>
-            <div class="cover"></div>
           </div>
         </div>
       </section>

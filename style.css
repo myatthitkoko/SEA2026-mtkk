@@ -52,6 +52,21 @@ nav {
   z-index: 0;
   display: none;
   font-size: 16pt;
+  backdrop-filter: blur(5px);
+}
+
+input[type="checkbox"]:disabled + label {
+  color: darkgray;
+  cursor: not-allowed;
+}
+
+input[type="text"] {
+  width: 70%;
+  height: 50px;
+}
+
+.main-header h1 {
+  color: white;
 }
 
 .main-header #toggle:checked + label {
@@ -62,27 +77,54 @@ nav {
   display: block;
 }
 
-@media (max-width: 768px) or (hover: none) {
-
 .main-header #toggle:hover ~ nav {
   display: block;
 }
 
+nav:hover {
+  display: block;
 }
 
 .navibar {
-  margin-top: 140px;
-  margin-left: 30px;
+  margin: 0 auto;
   justify-content: center;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 100%;
 }
 
-.navibar label {
+.sorting {
+  display: grid;
+}
+
+.sorting label {
   z-index: 1;
   height: 50px;
   font-size: 24pt;
-  margin-top: 50px;
   color: white;
+}
+
+@media (max-width: 768px) or (hover: none) {
+
+.main-header #toggle:not(:checked) ~ nav {
+  display: none;
+}
+
+nav {
+  width: 90%;
+  font-size: 24pt;
+}
+
+.navibar {
+  justify-content: center;
+}
+
+.sorting {
+  margin-top: 30px;
+}
+
 }
 
 .title {
@@ -176,7 +218,7 @@ nav {
 
 button {
   text-align: center;
-  background-color: #666;
+  background-color: #8da9c4;
   border: none;
   padding-left: 10px;
   padding-right: 10px;
@@ -247,21 +289,14 @@ button {
 
 #menu-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   max-width: 100%;
 }
 
-@media (max-width: 768px) or (hover:none) {
-
-#menu-container {
-  grid-template-columns: repeat(2, 1fr);
-}
-}
-
 .menu {
-  width: 250px;
+  width: 300px;
   height: 400px;
-  margin: 20px;
+  margin: 50px 0px;
   place-self: center;
   animation: fade 0.5s ease-in-out;
   transform-origin: left;
@@ -295,9 +330,8 @@ button {
 }
 
 .menu img {
-  width: 60%;
+  width: 30%;
   align-self: center;
-  height: auto;
 }
 
 .menu p {
@@ -305,15 +339,15 @@ button {
   text-align: center;
 }
 
-.menu:hover ~ .cover {
-  transform: scale(1, 1);
+@media (max-width: 768px) or (hover:none) {
+
+#menu-container {
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.cover {
-  height: 100px;
-  width: 100px;
-  transform: scale(1, 0);
-  transform-origin: bottom;
-  transition: transform 0.5s ease-in-out;
-  background-color: black;
+.menu {
+  width: 400px;
+  height: 500px;
+}
+
 }

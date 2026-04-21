@@ -201,7 +201,7 @@ const menuItems = [
   },
   {
     id: 30,
-    name: "Catepillar Roll",
+    name: "Caterpillar Roll",
     type: "rolls",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-catepillar.png?raw=true",
@@ -386,14 +386,6 @@ function showCards() {
   }
 }
 
-function checkSelection() {
-
-console.log() 
-`${selected.value} is selected.`;
-
-}
-
-
 function showCardsDetails() {
   const cardContainer = document.getElementById("menu-container");
   cardContainer.innerHTML = "";
@@ -433,6 +425,25 @@ function sortPrice(order) {
   }
 }
 
+function searchCard() {
+  document.getElementById("all").checked = true;
+  const cardContainer = document.getElementById("menu-container");
+  cardContainer.innerHTML = "";
+  const templateCard = document.querySelector("#nigiri-section .menu");
+  const searchValue = (document.querySelector('input[name="search"]').value).toUpperCase();
+  for (let i = 0; i < menuItems.length; i++) {
+    const item = menuItems[i];
+    let condition1 = item.name.toUpperCase().includes(searchValue);
+    let condition2 = item.type.toUpperCase().includes(searchValue);
+    let condition3 = item.price.toString().includes(searchValue);
+    if (condition1 || condition2 || condition3) {
+      const nextCard = templateCard.cloneNode(true); // Copy the template card
+      editCardContent(nextCard, item.name, item.imageURL, item.price); 
+      cardContainer.appendChild(nextCard); //
+    }
+  }
+}
+
 function editCardContent(card, newTitle, newImageURL, price) {
   card.style.display = "block";
 
@@ -468,16 +479,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const checkboxInput = document.querySelectorAll('input[name="checkboxSort"]');
+  const az = document.getElementById("sortAZ");
+  const za = document.getElementById("sortZA");
+  const lowHigh = document.getElementById("sortLowPrice");
+  const highLow = document.getElementById("sortHighPrice");
   checkboxInput.forEach(checkbox => {
     checkbox.addEventListener('change', () => {
-      if (checkbox.checked && checkbox.id == "sortAZ") {
+      if (checkbox.checked && checkbox == az) {
         sortAlphabetical();
-      } else if (checkbox.checked && checkbox.id == "sortZA") {
+        za.disabled = true;
+      }
+      if (checkbox.checked && checkbox == za) {
         sortAlphabetical("descend");
-      } else if (checkbox.checked && checkbox.id == "sortHighPrice") {
-        sortPrice("descend");
-      } else if (checkbox.checked && checkbox.id == "sortLowPrice") {
+        az.disabled = true;
+      } 
+      if (checkbox.checked && checkbox == lowHigh) {
         sortPrice();
+        highLow.disabled = true;
+      } 
+      if (checkbox.checked && checkbox == highLow) {
+        sortPrice("descend");
+        lowHigh.disabled = true;
+      }
+      if ((!checkbox.checked) && (checkbox == az)) {
+        za.disabled = false;
+      }
+      if ((!checkbox.checked) && (checkbox == za)) {
+        az.disabled = false;
+      }
+      if ((!checkbox.checked) && (checkbox == lowHigh)) {
+        highLow.disabled = false;
+      }
+      if ((!checkbox.checked) && (checkbox == highLow)) {
+        lowHigh.disabled = false;
       }
       showCards();
       showCardsDetails();
