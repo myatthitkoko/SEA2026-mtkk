@@ -254,14 +254,14 @@ button {
 @media (max-width: 768px) or (hover:none) {
 
 #menu-container {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 }
 
 .menu {
   width: 250px;
   height: 400px;
-  margin: 30px;
+  margin: 20px;
   place-self: center;
   animation: fade 0.5s ease-in-out;
   transform-origin: left;
