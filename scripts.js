@@ -363,10 +363,6 @@ const menuItems = [
 
 ]
 
-// This is an array of strings (TV show titles)
-// Your final submission should have much more data than this, and
-// you should use more than just an array of strings to store it all.
-
 // This function adds cards the page to display the data in the array
 function showCards() {
   const cardContainer = document.getElementById("card-container");
@@ -375,25 +371,31 @@ function showCards() {
 
   for (let i = 0; i < menuItems.length; i++) {
     const item = menuItems[i];
-   
-
-    // This part of the code doesn't scale very well! After you add your
-    // own data, you'll need to do something totally different here.
-
-    const nextCard = templateCard.cloneNode(true); // Copy the template card
-    editCardContent(nextCard, item.name, item.imageURL, item.price); 
-    cardContainer.appendChild(nextCard); // Add new card to the container
+    
+    if (item.price.toString() == "4.05") { // this part is to imitate moving sushi belt where all the plates are at the same price
+      const nextCard = templateCard.cloneNode(true); // Copy the template card
+      editCardContent(nextCard, item.name, item.imageURL, item.price); 
+      cardContainer.appendChild(nextCard); // Add new card to the container
+    }
   }
 }
 
 function showCardsDetails() {
+  //resetting some changes during search method
+  document.getElementById("message").textContent = "";
+  let page = document.querySelector("html");
+  let body = document.querySelector("body");
+  body.style.setProperty("height", "");
+  page.style.setProperty("height", "");
+
+  //this is based on the given template
   const cardContainer = document.getElementById("menu-container");
   cardContainer.innerHTML = "";
   const templateCard = document.querySelector("#menu-section .menu");
-  console.log("menu container:", cardContainer);
-  console.log("menu template:", templateCard);
+
   for (let i = 0; i < menuItems.length; i++) {
     const item = menuItems[i];
+    //sorting method
     if (document.querySelector('input[name="menu"]:checked').value == "all") {
 
       const nextCard = templateCard.cloneNode(true); // Copy the template card
@@ -407,9 +409,6 @@ function showCardsDetails() {
       cardContainer.appendChild(nextCard); // Add new card to the container
 
     }
-
-    // This part of the code doesn't scale very well! After you add your
-    // own data, you'll need to do something totally different here.
   }
 }
 
@@ -430,22 +429,29 @@ function sortPrice(order) {
 }
 
 function searchCard() {
-  document.getElementById("all").checked = true;
+  document.getElementById("all").checked = true; //to indicate searching for all categories
+  //this part is just for display purposes. it does not affect the code logic.
+  let page = document.querySelector("html");
+  let body = document.querySelector("body");
+  body.style.setProperty("height", "100%");
+  page.style.setProperty("height", "100%"); // keep footer at the bottom of the page when not enough content is found
   const cardContainer = document.getElementById("menu-container");
   cardContainer.innerHTML = "";
   const templateCard = document.querySelector("#menu-section .menu");
-  const searchValue = (document.querySelector('input[name="search"]').value).toUpperCase();
+  const searchValue = (document.querySelector('input[name="search"]').value);
+  document.getElementById("message").textContent = 'Showing results for "' + searchValue + '"';
   for (let i = 0; i < menuItems.length; i++) {
     const item = menuItems[i];
-    let condition1 = item.name.toUpperCase().includes(searchValue);
-    let condition2 = item.type.toUpperCase().includes(searchValue);
-    let condition3 = item.price.toString().includes(searchValue);
+    let condition1 = item.name.toUpperCase().includes(searchValue.toUpperCase());
+    let condition2 = item.type.toUpperCase().includes(searchValue.toUpperCase());
+    let condition3 = item.price.toString().includes(searchValue.toUpperCase());
     if (condition1 || condition2 || condition3) {
       const nextCard = templateCard.cloneNode(true); // Copy the template card
       editCardContent(nextCard, item.name, item.imageURL, item.price); 
       cardContainer.appendChild(nextCard); //
     }
   }
+
 }
 
 function editCardContent(card, newTitle, newImageURL, price) {
@@ -462,11 +468,6 @@ function editCardContent(card, newTitle, newImageURL, price) {
     const cardPrice = card.querySelector("p");
     cardPrice.textContent = "$" + price.toString();
   }
-
-  // You can use console.log to help you debug!
-  // View the output by right clicking on your website,
-  // select "Inspect", then click on the "Console" tab
-  console.log("new card:", newTitle, "- html: ", card);
 }
 
 // This calls the addCards() function when the page is first loaded
