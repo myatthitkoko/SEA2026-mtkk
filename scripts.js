@@ -287,13 +287,6 @@ const menuItems = [
     id: 90,
     name: "Tantanmen",
     type: "ramen",
-    price: 10.95,
-    imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-tantanmen.png?raw=true",
-  },
-  {
-    id: 90,
-    name: "Tantanmen",
-    type: "ramen",
     price: 11.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-tantanmen.png?raw=true",
   },
@@ -526,7 +519,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function quoteAlert() {
   alert(
-    "This website is an academic project created for educational purposes only. While the author is employed at a Kura Sushi location, this project is not affiliated with, endorsed by, or sponsored by Kura Sushi USA. All menu item names, pricing, and related content are used for illustrative purposes only and may not reflect current offerings. All images displayed on this site, excluding the webpage icon, were created by the author himself to avoid the use of copyrighted material."
+    "This website is an academic project created for educational purposes only. While the author is employed at a Kura Sushi location, this project is not affiliated with, endorsed by, or sponsored by Kura Sushi USA. All menu item names, pricing, and related content are used for illustrative purposes only and may not reflect current offerings. All images displayed on this site, except the webpage icon, were created by the author himself to avoid the use of copyrighted material."
   );
 }
 
