@@ -58,9 +58,16 @@ nav {
   color: red;
 }
 
-.main-header #toggle:checked ~ nav,
+.main-header #toggle:checked ~ nav {
+  display: block;
+}
+
+@media (max-width: 768px) or (hover: none) {
+
 .main-header #toggle:hover ~ nav {
   display: block;
+}
+
 }
 
 .navibar {
