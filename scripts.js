@@ -525,9 +525,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function quoteAlert() {
-  console.log("Button Clicked!");
   alert(
-    "I guess I can kiss heaven goodbye, because it got to be a sin to look this good!",
+    "This website is an academic project created for educational purposes only. While the author is employed at a Kura Sushi location, this project is not affiliated with, endorsed by, or sponsored by Kura Sushi USA. All menu item names, pricing, and related content are used for illustrative purposes only and may not reflect current offerings. All images displayed on this site, excluding the webpage icon, were created by the author himself to avoid the use of copyrighted material."
   );
 }
 

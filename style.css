@@ -5,6 +5,7 @@ body {
   background-color: #eef4ed;
   display: flex;
   flex-direction: column;
+  font-family: Helvetica, sans-serif;
 }
 
 .main-content {
@@ -363,7 +364,7 @@ button {
   text-align: center;
 }
 
-@media (max-width: 768px) or (hover:none) {
+@media (max-width: 768px), (hover:none) {
 
 #menu-container {
   grid-template-columns: repeat(2, 1fr);
@@ -372,6 +373,28 @@ button {
 .menu {
   width: 400px;
   height: 500px;
+}
+
+.navibar label {
+  font-size: 32pt;
+}
+
+.search {
+  font-size: 40pt;
+}
+
+input[type="text"],
+.search button {
+  font-size: 24pt;
+  height: 100px;
+}
+
+.menu h2{
+  font-size: 24pt;
+}
+
+.menu li, .menu p{
+  font-size: 16pt;
 }
 
 }
