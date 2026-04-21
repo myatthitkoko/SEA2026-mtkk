@@ -389,19 +389,23 @@ function showCards() {
 function showCardsDetails() {
   const cardContainer = document.getElementById("menu-container");
   cardContainer.innerHTML = "";
-  const templateCard = document.querySelector("#nigiri-section .menu");
+  const templateCard = document.querySelector("#menu-section .menu");
   console.log("menu container:", cardContainer);
   console.log("menu template:", templateCard);
   for (let i = 0; i < menuItems.length; i++) {
     const item = menuItems[i];
     if (document.querySelector('input[name="menu"]:checked').value == "all") {
+
       const nextCard = templateCard.cloneNode(true); // Copy the template card
-      editCardContent(nextCard, item.name, item.imageURL, item.price); 
+      editCardContent(nextCard, item.name, item.imageURL, item.price);
       cardContainer.appendChild(nextCard); // Add new card to the container
+
     } else if (item.type == document.querySelector('input[name="menu"]:checked').value) {
+
       const nextCard = templateCard.cloneNode(true); // Copy the template card
       editCardContent(nextCard, item.name, item.imageURL, item.price); 
       cardContainer.appendChild(nextCard); // Add new card to the container
+
     }
 
     // This part of the code doesn't scale very well! After you add your
@@ -429,7 +433,7 @@ function searchCard() {
   document.getElementById("all").checked = true;
   const cardContainer = document.getElementById("menu-container");
   cardContainer.innerHTML = "";
-  const templateCard = document.querySelector("#nigiri-section .menu");
+  const templateCard = document.querySelector("#menu-section .menu");
   const searchValue = (document.querySelector('input[name="search"]').value).toUpperCase();
   for (let i = 0; i < menuItems.length; i++) {
     const item = menuItems[i];
