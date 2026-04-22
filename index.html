@@ -17,7 +17,7 @@
         <div class="navibar">
           <div class="search">
             <h1>Looking for an item?</h1>
-            <input type="text" id="search" name="search" spellcheck="true" placeholder="Search for items here">
+            <input type="text" id="search" name="search" spellcheck="true" placeholder="Search by name, price, or ingredients here">
             <button type="submit" onclick="searchCard()">GO</button>
           </div>
           <div class="sorting">
@@ -39,8 +39,13 @@
             </span>
             <span>
               <input type="checkbox" id="dairy" name="allergen" value="allergen">
-              <label for="dairy" class="tooltip">Exclude Dairy</label>
+              <label for="dairy">Exclude Dairy</label>
             </span>
+            <span>
+              <input type="checkbox" id="shellfish" name="allergen" value="allergen">
+              <label for="shellfish">Exclude Shellfish</label>
+            </span>
+            <h4 id="notice"></h4>
           </div>
         </div>
       </nav>
@@ -93,6 +98,7 @@
     <div class="footer">
       <div class="overlay circle">
         <button onclick="quoteAlert()">View Disclaimer</button>
+        <button onclick="backToTop()">Back To Top</button>
       </div>
     </div>
   </body>

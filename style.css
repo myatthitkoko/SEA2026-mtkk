@@ -53,6 +53,9 @@ body {
 .main-header h3 {
  margin-left: 100px;
  margin-top: 0px; 
+ font-size: 2em;
+ width: 250px;
+ justify-content: flex-start;
 }
 
 nav {
@@ -241,13 +244,19 @@ nav {
   margin-top: auto;
 }
 
+.search button {
+  height: 70px;
+  width: 70px;
+}
+
 button {
   text-align: center;
   background-color: #8da9c4;
   border: none;
   padding-left: 10px;
   padding-right: 10px;
-  height: 40px;
+  height: 100px;
+  width: 200px;
   border-radius: 10px;
   color: white;
   font-size: 22px;
@@ -342,6 +351,10 @@ button {
   color: #13315c;
 }
 
+#notice {
+  color: red;
+}
+
 .menu-content {
   padding: 20px;
   font-family: "Verdana";
@@ -393,6 +406,7 @@ input[type="text"],
 .search button {
   font-size: 24pt;
   height: 100px;
+  width: 100%;
 }
 
 .menu h2{

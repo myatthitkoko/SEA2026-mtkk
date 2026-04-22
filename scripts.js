@@ -31,7 +31,7 @@ const menuItems = [
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-snowcrab.png?raw=true",
     ingredients: ["Crab", "Sushi Rice", "Vinegar"],
-    allergens: [],
+    allergens: ["shellfish"],
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ const menuItems = [
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-seared-bluefin.png?raw=true",
     ingredients: ["Seared Bluefin Tuna", "Sushi Rice", "Vinegar"],
-    allergens: [],
+    allergens: ["shellfish"],
   },
   {
     id: 4,
@@ -75,7 +75,7 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-yuzu-jalapeno-tuna.png?raw=true",
-    ingredients: ["Tuna", "Yuzu", "Jalapeno"],
+    ingredients: ["Tuna with sushi rice", "Yuzu", "Jalapeno"],
     allergens: [],
   },
   {
@@ -112,7 +112,7 @@ const menuItems = [
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-scallop.png?raw=true",
     ingredients: ["Scallop", "Sushi Rice", "Vinegar"],
-    allergens: [],
+    allergens: ["shellfish"],
   },
   {
     id: 11,
@@ -147,8 +147,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-garlic-ponzu-salmon.png?raw=true",
-    ingredients: ["Salmon", "Garlic", "Ponzu"],
-    allergens: [],
+    ingredients: ["Salmon with sushi rice", "Garlic", "Ponzu"],
+    allergens: ["shellfish"],
   },
   {
     id: 15,
@@ -156,7 +156,7 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-umami-oil-salmon.png?raw=true",
-    ingredients: ["Salmon", "Umami Oil", "Vinegar"],
+    ingredients: ["Salmon with sushi rice", "Umami Oil", "Vinegar"],
     allergens: [],
   },
   {
@@ -165,8 +165,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-seared-salmon-miso-cream-cheese.png?raw=true",
-    ingredients: ["Salmon", "Cream Cheese", "Miso"],
-    allergens: ["dairy"],
+    ingredients: ["Salmon with sushi rice", "Cream Cheese", "Miso"],
+    allergens: ["dairy", "shellfish"],
   },
   {
     id: 17,
@@ -174,7 +174,7 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-seared-salmon-mayo.png?raw=true",
-    ingredients: ["Salmon", "Japanese Mayo", "Vinegar"],
+    ingredients: ["Salmon", "Japanese Mayo", "Sushi Rice"],
     allergens: [],
   },
   {
@@ -184,7 +184,7 @@ const menuItems = [
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-shrimp.png?raw=true",
     ingredients: ["Shrimp", "Sushi Rice", "Vinegar"],
-    allergens: [],
+    allergens: ["shellfish"],
   },
   {
     id: 19,
@@ -193,7 +193,7 @@ const menuItems = [
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-sweet-shrimp.png?raw=true",
     ingredients: ["Sweet Shrimp", "Sushi Rice", "Vinegar"],
-    allergens: [],
+    allergens: ["shellfish"],
   },
   {
     id: 20,
@@ -201,8 +201,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-yuzu-jalapeno-sweet-shrimp.png?raw=true",
-    ingredients: ["Sweet Shrimp", "Yuzu", "Jalapeno"],
-    allergens: [],
+    ingredients: ["Sweet Shrimp  with sushi rice", "Yuzu", "Jalapeno"],
+    allergens: ["shellfish"],
   },
   {
     id: 21,
@@ -219,8 +219,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-seared-eel-miso-cream-cheese.png?raw=true",
-    ingredients: ["Eel", "Cream Cheese", "Miso"],
-    allergens: ["dairy"],
+    ingredients: ["Eel  with sushi rice", "Cream Cheese", "Miso"],
+    allergens: ["dairy", "shellfish"],
   },
   {
     id: 23,
@@ -238,7 +238,7 @@ const menuItems = [
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-squid.png?raw=true",
     ingredients: ["Squid", "Sushi Rice", "Vinegar"],
-    allergens: [],
+    allergens: ["shellfish"],
   },
   {
     id: 25,
@@ -265,8 +265,8 @@ const menuItems = [
     type: "rolls",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-golden-crunchy.png?raw=true",
-    ingredients: ["Shrimp", "Crunch", "Sauce"],
-    allergens: [],
+    ingredients: ["Shrimp", "Crunch", " sushi rice"],
+    allergens: ["shellfish"],
   },
   {
     id: 32,
@@ -274,8 +274,8 @@ const menuItems = [
     type: "rolls",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-rainbow.png?raw=true",
-    ingredients: ["Tuna", "Salmon", "Avocado"],
-    allergens: [],
+    ingredients: ["Tuna", "Salmon", "Avocado  with sushi rice"],
+    allergens: ["shellfish"],
   },
   {
     id: 33,
@@ -284,7 +284,7 @@ const menuItems = [
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-philadelphia.png?raw=true",
     ingredients: ["Salmon", "Cream Cheese", "Rice"],
-    allergens: ["dairy"],
+    allergens: ["dairy", "shellfish"],
   },
   {
     id: 34,
@@ -293,7 +293,7 @@ const menuItems = [
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-snowcrab-california.png?raw=true",
     ingredients: ["Crab", "Avocado", "Rice"],
-    allergens: [],
+    allergens: ["shellfish"],
   },
   {
     id: 35,
@@ -320,8 +320,8 @@ const menuItems = [
     type: "sides",
     price: 4.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/sides-garlic-ponzu-sashimi.png?raw=true",
-    ingredients: ["Fish", "Garlic", "Ponzu"],
-    allergens: [],
+    ingredients: ["Tuna", "Garlic", "Ponzu"],
+    allergens: ["shellfish"],
   },
   {
     id: 62,
@@ -357,7 +357,7 @@ const menuItems = [
     price: 4.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/sides-shrimp-tempura.png?raw=true",
     ingredients: ["Shrimp", "Batter", "Oil"],
-    allergens: [],
+    allergens: ["shellfish"],
   },
 
   {
@@ -366,8 +366,8 @@ const menuItems = [
     type: "ramen",
     price: 11.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-tantanmen.png?raw=true",
-    ingredients: ["Noodles", "Broth", "Ground Pork"],
-    allergens: [],
+    ingredients: ["Noodles", "Broth", "Pork and Eggs"],
+    allergens: ["shellfish"],
   },
   {
     id: 91,
@@ -375,8 +375,8 @@ const menuItems = [
     type: "ramen",
     price: 11.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-miso-ramen.png?raw=true",
-    ingredients: ["Noodles", "Miso Broth", "Pork"],
-    allergens: [],
+    ingredients: ["Noodles", "Miso Broth", "Pork and Eggs"],
+    allergens: ["shellfish"],
   },
   {
     id: 92,
@@ -384,8 +384,8 @@ const menuItems = [
     type: "ramen",
     price: 11.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-shoyu-ramen.png?raw=true",
-    ingredients: ["Noodles", "Soy Broth", "Pork"],
-    allergens: [],
+    ingredients: ["Noodles", "Soy Broth", "Pork and Eggs"],
+    allergens: ["shellfish"],
   },
   {
     id: 93,
@@ -394,7 +394,7 @@ const menuItems = [
     price: 11.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-tonkotsu-ramen.png?raw=true",
     ingredients: ["Noodles", "Pork Broth", "Chashu"],
-    allergens: [],
+    allergens: ["shellfish"],
   },
   {
     id: 94,
@@ -403,7 +403,7 @@ const menuItems = [
     price: 10.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-shrimp-tempura-udon.png?raw=true",
     ingredients: ["Udon", "Shrimp Tempura", "Broth"],
-    allergens: [],
+    allergens: ["shellfish"],
   },
   {
     id: 95,
@@ -412,7 +412,7 @@ const menuItems = [
     price: 10.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-beef-udon.png?raw=true",
     ingredients: ["Udon", "Beef", "Broth"],
-    allergens: [],
+    allergens: ["shellfish"],
   },
 
   {
@@ -453,7 +453,7 @@ const menuItems = [
   },
 ];
 
-// This function adds cards the page to display the data in the array
+//This function adds cards to the conveyer belt section on the page from the menuItems array with objects
 function showCards() {
   const cardContainer = document.getElementById("card-container");
   cardContainer.innerHTML = "";
@@ -462,7 +462,9 @@ function showCards() {
   for (let i = 0; i < menuItems.length; i++) {
     const item = menuItems[i];
     
-    if (item.price.toString() == "4.05") { // this part is to imitate moving sushi belt where all the plates are at the same price
+    if (item.price.toString() == "4.05") { 
+    // this part is to imitate moving sushi belt where all the plates are at the same price
+    // for example, you should never find ramen, or udon on the moving belt
       const nextCard = templateCard.cloneNode(true); // Copy the template card
       editCardContent(nextCard, item.name, item.imageURL, item.price); 
       cardContainer.appendChild(nextCard); // Add new card to the container
@@ -470,14 +472,8 @@ function showCards() {
   }
 }
 
+// This function adds cards to full menu section on the page from the menuItems array with objects
 function showCardsDetails() {
-  //resetting some changes during search method
-  document.getElementById("message").textContent = "";
-  let page = document.querySelector("html");
-  let body = document.querySelector("body");
-  body.style.setProperty("height", "");
-  page.style.setProperty("height", "");
-
   //this is based on the given template
   const cardContainer = document.getElementById("menu-container");
   cardContainer.innerHTML = "";
@@ -485,7 +481,7 @@ function showCardsDetails() {
 
   for (let i = 0; i < menuItems.length; i++) {
     const item = menuItems[i];
-    //sorting method
+    //filtering method built on the provided template
     if (document.querySelector('input[name="menu"]:checked').value == "all") {
 
       const nextCard = templateCard.cloneNode(true); // Copy the template card
@@ -506,7 +502,7 @@ function sortAlphabetical(order) {
   if (order == "descend") {
     menuItems.sort((a, b) => b.name.localeCompare(a.name));
   } else {
-    menuItems.sort((a, b) => a.name.localeCompare(b.name));
+    menuItems.sort((a, b) => a.name.localeCompare(b.name)); //ascending by default
   }
 }
 
@@ -514,35 +510,40 @@ function sortPrice(order) {
   if (order == "descend") {
     menuItems.sort((a, b) => b.price - a.price);
   } else {
-    menuItems.sort((a, b) => a.price - b.price);
+    menuItems.sort((a, b) => a.price - b.price); //ascending by default
   }
 }
 
 function searchCard() {
   document.getElementById("all").checked = true; //to indicate searching for all categories
-  //this part is just for display purposes. it does not affect the code logic.
-  let page = document.querySelector("html");
-  let body = document.querySelector("body");
-  body.style.setProperty("height", "100%");
-  page.style.setProperty("height", "100%"); // keep footer at the bottom of the page when not enough content is found
+
   const cardContainer = document.getElementById("menu-container");
   cardContainer.innerHTML = "";
   const templateCard = document.querySelector("#menu-section .menu");
-  const searchValue = (document.querySelector('input[name="search"]').value);
+
+  const searchValue = (document.querySelector('input[name="search"]').value); //getting search value and outputting a message
   document.getElementById("message").textContent = 'Showing results for "' + searchValue + '"';
+
   for (let i = 0; i < menuItems.length; i++) {
     const item = menuItems[i];
+
     let condition1 = item.name.toUpperCase().includes(searchValue.toUpperCase());
     let condition2 = item.type.toUpperCase().includes(searchValue.toUpperCase());
     let condition3 = item.price.toString().includes(searchValue.toUpperCase());
-    if (condition1 || condition2 || condition3) {
+    for (let j = 0; j < item.ingredients.length; j ++) {
+      let condition4 = item.ingredients[j].toUpperCase().includes(searchValue.toUpperCase());
+
+      if (condition1 || condition2 || condition3 || condition4) {
       const nextCard = templateCard.cloneNode(true); // Copy the template card
       editCardContent(nextCard, item.name, item.imageURL, item.price, item.ingredients); 
       cardContainer.appendChild(nextCard); //
+      break; //break out of j for-loop as we only need one card per match
+      }
     }
   }
 }
 
+//this function was barely changed in the process. just p and li added for display purposes
 function editCardContent(card, newTitle, newImageURL, price, ingredients) {
   card.style.display = "block";
 
@@ -560,33 +561,47 @@ function editCardContent(card, newTitle, newImageURL, price, ingredients) {
 
   if (card.querySelector("li")) {
     const lists = card.querySelectorAll("li");
-    for (let j = 0; j < lists.length; j++) {
-      lists[j].textContent = ingredients[j] || "";
+    for (let i = 0; i < lists.length; i++) {
+      lists[i].textContent = ingredients[i];
     }
   }
 }
 
+//disclaimer quote at the footer
+function quoteAlert() {
+  alert(
+    "This website is an academic project created for educational purposes only. While the author is employed at a Kura Sushi location, this project is not affiliated with, endorsed by, or sponsored by Kura Sushi USA. All menu item names, pricing, and related content are used for illustrative purposes only and may not reflect current offerings. All images displayed on this site, except the webpage icon, were created by the author himself to avoid the use of copyrighted material."
+  );
+}
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+//demonstrating removing cards with certain criteria
+function removeAllergens(removeValue) {
+  for (let i = menuItems.length - 1; i>=0; i--) { //looping backwards because the right side shifts with every card removal while the left side remains intact
+    const item = menuItems[i];
+    if (item.allergens.includes(removeValue)) {
+      console.log(menuItems[i]);
+      let removedItem = menuItems.splice(i, 1);
+    }
+  }
+  showCards(); // Call showCards again to refresh
+  showCardsDetails(); // Call showCardsDetails again to refresh
+}
+
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards);
-
 document.addEventListener("DOMContentLoaded", showCardsDetails);
 
+//This calls radioInput (to filter in banner), checkboxInput (to sort), and allergenInput (to remove cards)
+//All of them respond to any changes in their field and take corresponding actions by assigning appropriate functions
 document.addEventListener('DOMContentLoaded', () => {
   const radioInput = document.querySelectorAll('input[name="menu"]');
   radioInput.forEach(radio => {
     radio.addEventListener('change', showCardsDetails);
-  });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const allergenInput = document.querySelectorAll('input[name="allergen"]');
-  allergenInput.forEach(checkbox => {
-    checkbox.addEventListener('change', () => {
-      if (checkbox.checked && checkbox == document.getElementById("dairy")) {
-        removeAllergens("dairy");
-        document.getElementById("dairy").disabled = true;
-      }
-    });
   });
 });
 
@@ -632,21 +647,24 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-function quoteAlert() {
-  alert(
-    "This website is an academic project created for educational purposes only. While the author is employed at a Kura Sushi location, this project is not affiliated with, endorsed by, or sponsored by Kura Sushi USA. All menu item names, pricing, and related content are used for illustrative purposes only and may not reflect current offerings. All images displayed on this site, except the webpage icon, were created by the author himself to avoid the use of copyrighted material."
-  );
-}
-
-function removeAllergens(removeValue) {
-  for (let i = menuItems.length - 1; i>=0; i--) {
-    const item = menuItems[i];
-    if (item.allergens.includes(removeValue)) {
-      console.log(menuItems[i]);
-      let removedItem = menuItems.splice(i, 1);
-      console.log(i);
-    }
-  }
-  showCards(); // Call showCards again to refresh
-  showCardsDetails();
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const allergenInput = document.querySelectorAll('input[name="allergen"]');
+  const dairy = document.getElementById("dairy");
+  const shellfish = document.getElementById("shellfish");
+  allergenInput.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked && checkbox == dairy) {
+        removeAllergens("dairy");
+        dairy.disabled = true;
+      }
+      if (checkbox.checked && checkbox == shellfish) {
+        removeAllergens("shellfish");
+        shellfish.disabled = true;
+      }
+      if (dairy.disabled || shellfish.disabled) {
+        console.log("here");
+        document.getElementById("notice").textContent = "Please refresh the page to turn off allergen restrictions";
+      }
+    });
+  });
+});
