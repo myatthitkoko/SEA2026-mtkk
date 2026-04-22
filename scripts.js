@@ -474,6 +474,8 @@ function showCards() {
 
 // This function adds cards to full menu section on the page from the menuItems array with objects
 function showCardsDetails() {
+  //resetting search message to default
+  document.getElementById("message").textContent = "";
   //this is based on the given template
   const cardContainer = document.getElementById("menu-container");
   cardContainer.innerHTML = "";
