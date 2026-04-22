@@ -30,6 +30,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-snowcrab.png?raw=true",
+    ingredients: ["Crab", "Sushi Rice", "Vinegar"],
+    allergens: [],
   },
   {
     id: 2,
@@ -37,6 +39,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-bluefin.png?raw=true",
+    ingredients: ["Bluefin Tuna", "Sushi Rice", "Vinegar"],
+    allergens: [],
   },
   {
     id: 3,
@@ -44,6 +48,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-seared-bluefin.png?raw=true",
+    ingredients: ["Seared Bluefin Tuna", "Sushi Rice", "Vinegar"],
+    allergens: [],
   },
   {
     id: 4,
@@ -51,6 +57,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-tuna.png?raw=true",
+    ingredients: ["Tuna", "Sushi Rice", "Vinegar"],
+    allergens: [],
   },
   {
     id: 5,
@@ -58,6 +66,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-garlic-tuna.png?raw=true",
+    ingredients: ["Skipjack Tuna", "Garlic", "Sushi Rice"],
+    allergens: [],
   },
   {
     id: 6,
@@ -65,6 +75,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-yuzu-jalapeno-tuna.png?raw=true",
+    ingredients: ["Tuna", "Yuzu", "Jalapeno"],
+    allergens: [],
   },
   {
     id: 7,
@@ -72,6 +84,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-american-wagyu.png?raw=true",
+    ingredients: ["Wagyu Beef", "Sushi Rice", "Vinegar"],
+    allergens: [],
   },
   {
     id: 8,
@@ -79,6 +93,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-umami-oil-seared-beef.png?raw=true",
+    ingredients: ["Beef", "Umami Oil", "Sushi Rice"],
+    allergens: [],
   },
   {
     id: 9,
@@ -86,6 +102,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-seared-beef-yakiniku.png?raw=true",
+    ingredients: ["Beef", "Yakiniku Sauce", "Sushi Rice"],
+    allergens: [],
   },
   {
     id: 10,
@@ -93,6 +111,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-scallop.png?raw=true",
+    ingredients: ["Scallop", "Sushi Rice", "Vinegar"],
+    allergens: [],
   },
   {
     id: 11,
@@ -100,6 +120,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-scallop.png?raw=true",
+    ingredients: ["Scallop", "Japanese Mayo", "Sushi Rice"],
+    allergens: [],
   },
   {
     id: 12,
@@ -107,6 +129,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-salmon.png?raw=true",
+    ingredients: ["Salmon", "Sushi Rice", "Vinegar"],
+    allergens: [],
   },
   {
     id: 13,
@@ -114,6 +138,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-salmon-toro.png?raw=true",
+    ingredients: ["Salmon Belly", "Sushi Rice", "Vinegar"],
+    allergens: [],
   },
   {
     id: 14,
@@ -121,6 +147,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-garlic-ponzu-salmon.png?raw=true",
+    ingredients: ["Salmon", "Garlic", "Ponzu"],
+    allergens: [],
   },
   {
     id: 15,
@@ -128,6 +156,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-umami-oil-salmon.png?raw=true",
+    ingredients: ["Salmon", "Umami Oil", "Vinegar"],
+    allergens: [],
   },
   {
     id: 16,
@@ -135,6 +165,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-seared-salmon-miso-cream-cheese.png?raw=true",
+    ingredients: ["Salmon", "Cream Cheese", "Miso"],
+    allergens: ["dairy"],
   },
   {
     id: 17,
@@ -142,6 +174,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-seared-salmon-mayo.png?raw=true",
+    ingredients: ["Salmon", "Japanese Mayo", "Vinegar"],
+    allergens: [],
   },
   {
     id: 18,
@@ -149,6 +183,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-shrimp.png?raw=true",
+    ingredients: ["Shrimp", "Sushi Rice", "Vinegar"],
+    allergens: [],
   },
   {
     id: 19,
@@ -156,6 +192,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-sweet-shrimp.png?raw=true",
+    ingredients: ["Sweet Shrimp", "Sushi Rice", "Vinegar"],
+    allergens: [],
   },
   {
     id: 20,
@@ -163,6 +201,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-yuzu-jalapeno-sweet-shrimp.png?raw=true",
+    ingredients: ["Sweet Shrimp", "Yuzu", "Jalapeno"],
+    allergens: [],
   },
   {
     id: 21,
@@ -170,6 +210,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-eel.png?raw=true",
+    ingredients: ["Eel", "Sushi Rice", "Vinegar"],
+    allergens: [],
   },
   {
     id: 22,
@@ -177,6 +219,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-seared-eel-miso-cream-cheese.png?raw=true",
+    ingredients: ["Eel", "Cream Cheese", "Miso"],
+    allergens: ["dairy"],
   },
   {
     id: 23,
@@ -184,6 +228,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-yellowtail.png?raw=true",
+    ingredients: ["Yellowtail", "Sushi Rice", "Vinegar"],
+    allergens: [],
   },
   {
     id: 24,
@@ -191,6 +237,8 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-squid.png?raw=true",
+    ingredients: ["Squid", "Sushi Rice", "Vinegar"],
+    allergens: [],
   },
   {
     id: 25,
@@ -198,13 +246,18 @@ const menuItems = [
     type: "nigiri",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/nigiri-tamago.png?raw=true",
+    ingredients: ["Egg", "Sushi Rice", "Vinegar"],
+    allergens: [],
   },
+
   {
     id: 30,
     name: "Caterpillar Roll",
     type: "rolls",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-catepillar.png?raw=true",
+    ingredients: ["Eel", "Avocado", "Rice"],
+    allergens: [],
   },
   {
     id: 31,
@@ -212,6 +265,8 @@ const menuItems = [
     type: "rolls",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-golden-crunchy.png?raw=true",
+    ingredients: ["Shrimp", "Crunch", "Sauce"],
+    allergens: [],
   },
   {
     id: 32,
@@ -219,6 +274,8 @@ const menuItems = [
     type: "rolls",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-rainbow.png?raw=true",
+    ingredients: ["Tuna", "Salmon", "Avocado"],
+    allergens: [],
   },
   {
     id: 33,
@@ -226,6 +283,8 @@ const menuItems = [
     type: "rolls",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-philadelphia.png?raw=true",
+    ingredients: ["Salmon", "Cream Cheese", "Rice"],
+    allergens: ["dairy"],
   },
   {
     id: 34,
@@ -233,6 +292,8 @@ const menuItems = [
     type: "rolls",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-snowcrab-california.png?raw=true",
+    ingredients: ["Crab", "Avocado", "Rice"],
+    allergens: [],
   },
   {
     id: 35,
@@ -240,13 +301,18 @@ const menuItems = [
     type: "rolls",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/rolls-spicy-tuna.png?raw=true",
+    ingredients: ["Tuna", "Spicy Sauce", "Rice"],
+    allergens: [],
   },
+
   {
     id: 60,
     name: "Chicken Gyoza Dumpling",
     type: "sides",
     price: 6.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/sides-chicken-gyoza.png?raw=true",
+    ingredients: ["Chicken", "Dough", "Garlic"],
+    allergens: [],
   },
   {
     id: 61,
@@ -254,6 +320,8 @@ const menuItems = [
     type: "sides",
     price: 4.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/sides-garlic-ponzu-sashimi.png?raw=true",
+    ingredients: ["Fish", "Garlic", "Ponzu"],
+    allergens: [],
   },
   {
     id: 62,
@@ -261,6 +329,8 @@ const menuItems = [
     type: "sides",
     price: 4.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/sides-tuna-sashimi.png?raw=true",
+    ingredients: ["Tuna", "Leaf", "Ice"],
+    allergens: [],
   },
   {
     id: 63,
@@ -268,6 +338,8 @@ const menuItems = [
     type: "sides",
     price: 4.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/sides-salmon-sashimi.png?raw=true",
+    ingredients: ["Salmon", "Leaf", "Ice"],
+    allergens: [],
   },
   {
     id: 64,
@@ -275,6 +347,8 @@ const menuItems = [
     type: "sides",
     price: 4.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/sides-yellowtail-sashimi.png?raw=true",
+    ingredients: ["Yellowtail", "Leaf", "Ice"],
+    allergens: [],
   },
   {
     id: 65,
@@ -282,13 +356,18 @@ const menuItems = [
     type: "sides",
     price: 4.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/sides-shrimp-tempura.png?raw=true",
+    ingredients: ["Shrimp", "Batter", "Oil"],
+    allergens: [],
   },
+
   {
     id: 90,
     name: "Tantanmen",
     type: "ramen",
     price: 11.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-tantanmen.png?raw=true",
+    ingredients: ["Noodles", "Broth", "Ground Pork"],
+    allergens: [],
   },
   {
     id: 91,
@@ -296,6 +375,8 @@ const menuItems = [
     type: "ramen",
     price: 11.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-miso-ramen.png?raw=true",
+    ingredients: ["Noodles", "Miso Broth", "Pork"],
+    allergens: [],
   },
   {
     id: 92,
@@ -303,6 +384,8 @@ const menuItems = [
     type: "ramen",
     price: 11.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-shoyu-ramen.png?raw=true",
+    ingredients: ["Noodles", "Soy Broth", "Pork"],
+    allergens: [],
   },
   {
     id: 93,
@@ -310,6 +393,8 @@ const menuItems = [
     type: "ramen",
     price: 11.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-tonkotsu-ramen.png?raw=true",
+    ingredients: ["Noodles", "Pork Broth", "Chashu"],
+    allergens: [],
   },
   {
     id: 94,
@@ -317,6 +402,8 @@ const menuItems = [
     type: "ramen",
     price: 10.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-shrimp-tempura-udon.png?raw=true",
+    ingredients: ["Udon", "Shrimp Tempura", "Broth"],
+    allergens: [],
   },
   {
     id: 95,
@@ -324,13 +411,18 @@ const menuItems = [
     type: "ramen",
     price: 10.95,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/ramen-beef-udon.png?raw=true",
+    ingredients: ["Udon", "Beef", "Broth"],
+    allergens: [],
   },
+
   {
     id: 120,
     name: "Taiyaki Ice Cream",
     type: "desserts",
     price: 6.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/desserts-taiyaki-ice-cream.png?raw=true",
+    ingredients: ["Ice Cream", "Waffle", "Red beans"],
+    allergens: ["dairy"],
   },
   {
     id: 121,
@@ -338,6 +430,8 @@ const menuItems = [
     type: "desserts",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/desserts-butter-cake.png?raw=true",
+    ingredients: ["Butter", "Sugar", "Flour"],
+    allergens: ["dairy"],
   },
   {
     id: 122,
@@ -345,6 +439,8 @@ const menuItems = [
     type: "desserts",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/desserts-ny-cheesecake.png?raw=true",
+    ingredients: ["Cream Cheese", "Sugar", "Egg"],
+    allergens: ["dairy"],
   },
   {
     id: 123,
@@ -352,9 +448,10 @@ const menuItems = [
     type: "desserts",
     price: 4.05,
     imageURL: "https://github.com/myatthitkoko/files/blob/main/desserts-warabimochi.png?raw=true",
+    ingredients: ["Mochi", "Kinako", "Syrup"],
+    allergens: [],
   },
-
-]
+];
 
 // This function adds cards the page to display the data in the array
 function showCards() {
@@ -392,13 +489,13 @@ function showCardsDetails() {
     if (document.querySelector('input[name="menu"]:checked').value == "all") {
 
       const nextCard = templateCard.cloneNode(true); // Copy the template card
-      editCardContent(nextCard, item.name, item.imageURL, item.price);
+      editCardContent(nextCard, item.name, item.imageURL, item.price, item.ingredients, i);
       cardContainer.appendChild(nextCard); // Add new card to the container
 
     } else if (item.type == document.querySelector('input[name="menu"]:checked').value) {
 
       const nextCard = templateCard.cloneNode(true); // Copy the template card
-      editCardContent(nextCard, item.name, item.imageURL, item.price); 
+      editCardContent(nextCard, item.name, item.imageURL, item.price, item.ingredients); 
       cardContainer.appendChild(nextCard); // Add new card to the container
 
     }
@@ -440,14 +537,13 @@ function searchCard() {
     let condition3 = item.price.toString().includes(searchValue.toUpperCase());
     if (condition1 || condition2 || condition3) {
       const nextCard = templateCard.cloneNode(true); // Copy the template card
-      editCardContent(nextCard, item.name, item.imageURL, item.price); 
+      editCardContent(nextCard, item.name, item.imageURL, item.price, item.ingredients); 
       cardContainer.appendChild(nextCard); //
     }
   }
-
 }
 
-function editCardContent(card, newTitle, newImageURL, price) {
+function editCardContent(card, newTitle, newImageURL, price, ingredients) {
   card.style.display = "block";
 
   const cardHeader = card.querySelector("h2");
@@ -461,6 +557,13 @@ function editCardContent(card, newTitle, newImageURL, price) {
     const cardPrice = card.querySelector("p");
     cardPrice.textContent = "$" + price.toString();
   }
+
+  if (card.querySelector("li")) {
+    const lists = card.querySelectorAll("li");
+    for (let j = 0; j < lists.length; j++) {
+      lists[j].textContent = ingredients[j] || "";
+    }
+  }
 }
 
 // This calls the addCards() function when the page is first loaded
@@ -472,6 +575,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const radioInput = document.querySelectorAll('input[name="menu"]');
   radioInput.forEach(radio => {
     radio.addEventListener('change', showCardsDetails);
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const allergenInput = document.querySelectorAll('input[name="allergen"]');
+  allergenInput.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked && checkbox == document.getElementById("dairy")) {
+        removeAllergens("dairy");
+        document.getElementById("dairy").disabled = true;
+      }
+    });
   });
 });
 
@@ -523,8 +638,15 @@ function quoteAlert() {
   );
 }
 
-function removeLastCard() {
-  menuItems.pop(); // Remove last item in titles array
+function removeAllergens(removeValue) {
+  for (let i = menuItems.length - 1; i>=0; i--) {
+    const item = menuItems[i];
+    if (item.allergens.includes(removeValue)) {
+      console.log(menuItems[i]);
+      let removedItem = menuItems.splice(i, 1);
+      console.log(i);
+    }
+  }
   showCards(); // Call showCards again to refresh
   showCardsDetails();
 }
